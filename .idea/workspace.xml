@@ -14,6 +14,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/code_challenge$CashRegisterTest.coverage" NAME="CashRegisterTest Coverage Results" MODIFIED="1511162501609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cashRegister.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -38,8 +43,8 @@
       <file leaf-file-name="CashRegister.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="231">
+              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#452#453#0" expanded="true" />
@@ -52,8 +57,8 @@
       <file leaf-file-name="CashRegisterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+            <state relative-caret-position="539">
+              <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#692#710#0" expanded="true" />
@@ -511,28 +516,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_challenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_challenge_rocketmiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="emptyRegisterException" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -586,7 +569,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CashRegisterTest">
+  <component name="RunManager" selected="JUnit.CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible">
     <configuration default="false" name="CashRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -985,8 +968,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CashRegisterTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.tesMakeChangeReturnsErrorIfChangeNotPossible" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRegisterEmpty" />
@@ -1007,34 +990,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CashRegisterTest - 2017.11.20 at 00h 40m 55s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 01h 21m 30s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 00h 41m 47s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 01h 21m 34s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 00h 41m 56s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 01h 21m 39s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 00h 43m 40s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 01h 21m 42s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_tesMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 38m 10s.xml">
-      <configuration name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 22m 33s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_tesMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 40m 16s.xml">
-      <configuration name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 22m 48s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_tesMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 40m 28s.xml">
-      <configuration name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 25m 42s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_tesMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 40m 34s.xml">
-      <configuration name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 25m 49s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_tesMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 41m 54s.xml">
-      <configuration name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 25m 51s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 00h 40m 48s.xml">
+    <history-entry file="CashRegisterTest_testMakeChangeReturnsErrorMessageIfChangeNotPossible - 2017.11.20 at 01h 26m 51s.xml">
       <configuration name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1058,18 +1041,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5695007" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35222673" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1417004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18353577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24079528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3859649" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37516868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1121,18 +1105,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java</url>
-          <line>79</line>
+          <line>63</line>
           <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1676,14 +1654,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/classes/main/calculate/Calculate.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/util/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11400">
@@ -1944,10 +1914,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+        <state relative-caret-position="539">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#692#710#0" expanded="true" />
@@ -1964,8 +1942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="231">
+          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#452#453#0" expanded="true" />

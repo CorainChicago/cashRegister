@@ -31,6 +31,7 @@ public class CashRegister {
             balance  = balance + (key * value);
             state.insert(0, " " + value);
         }
+
         String total = "$" + balance.toString();
         state.insert(0, total);
         return state.toString();
@@ -53,7 +54,6 @@ public class CashRegister {
         for(Map.Entry<Integer,Integer> entry : denominationsRemoved.entrySet()) {
             Integer key = entry.getKey();
             Integer value = entry.getValue();
-
             int balance = ((Integer) register.get(key)).intValue();
 
             register.put(key, balance - value);
@@ -61,7 +61,7 @@ public class CashRegister {
     }
 
     public String makeChange(Integer changeAmount){
-        if (changeAmount == 0 || emptyRegister()){
+        if (changeAmount == 0 || emptyRegister() || getRegisterTotal() < changeAmount){
             return "sorry";
         };
 
@@ -78,7 +78,7 @@ public class CashRegister {
                     changeAmount -= denomination;
 
                 }while(changeAmount / denomination > 0 && count <= denominationCount);
-                if(denomination == 5 && ((Integer) register.get(1)).intValue() == 0){
+                if(denomination == 5 && ((Integer) register.get(1)).intValue() == 0 && changeAmount > 2 * ((Integer) register.get(2)).intValue()){
                     count -= 1;
                     changeAmount += denomination;
                 }
@@ -100,5 +100,15 @@ public class CashRegister {
          return register.entrySet().stream().allMatch(entry -> {
              return entry.getValue() == 0;
          });
+    }
+
+    private Integer getRegisterTotal(){
+        Integer balance = 0;
+        for(Map.Entry<Integer,Integer> entry : register.entrySet()) {
+            Integer key = entry.getKey();
+            Integer value = entry.getValue();
+            balance  = balance + (key * value);
+        }
+        return balance;
     }
 }
