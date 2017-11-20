@@ -2,7 +2,6 @@ package cashRegister;
 
 import emptyRegisterException.EmptyRegisterException;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class CashRegister {
@@ -13,21 +12,21 @@ public class CashRegister {
 
     private int change;
 
-    private TreeMap<Integer, Integer> drawer;
+    private TreeMap<Integer, Integer> register;
 
     public CashRegister() {
-        this.drawer= new TreeMap();
-        drawer.put(20, 0);
-        drawer.put(10, 0);
-        drawer.put(5, 0);
-        drawer.put(2, 0);
-        drawer.put(1, 0);
+        this.register = new TreeMap();
+        register.put(20, 0);
+        register.put(10, 0);
+        register.put(5, 0);
+        register.put(2, 0);
+        register.put(1, 0);
     }
 
     public String showCurrentState(){
         StringBuilder state = new StringBuilder("");
         Integer balance = 0;
-        for(Map.Entry<Integer,Integer> entry : drawer.entrySet()) {
+        for(Map.Entry<Integer,Integer> entry : register.entrySet()) {
             Integer key = entry.getKey();
             Integer value = entry.getValue();
 
@@ -44,8 +43,8 @@ public class CashRegister {
             Integer key = entry.getKey();
             Integer  value = entry.getValue();
 
-            int balance = ((Integer)drawer.get(key)).intValue();
-            drawer.put(key, balance + value);
+            int balance = ((Integer) register.get(key)).intValue();
+            register.put(key, balance + value);
         }
 
     }
@@ -58,9 +57,9 @@ public class CashRegister {
             Integer key = entry.getKey();
             Integer value = entry.getValue();
 
-            int balance = ((Integer) drawer.get(key)).intValue();
+            int balance = ((Integer) register.get(key)).intValue();
 
-            drawer.put(key, balance - value);
+            register.put(key, balance - value);
         }
     }
 
@@ -70,11 +69,11 @@ public class CashRegister {
         };
 
         String changeDenominations = new String();
-        Iterator drawerKeysReversed = drawer.descendingKeySet().iterator();
+        Iterator drawerKeysReversed = register.descendingKeySet().iterator();
 
         while(drawerKeysReversed.hasNext()){
             Integer denomination = Integer.parseInt(drawerKeysReversed.next().toString());
-            Integer denominationCount =  ((Integer) drawer.get(denomination)).intValue();
+            Integer denominationCount =  ((Integer) register.get(denomination)).intValue();
             if (changeAmount / denomination > 0 && denominationCount > 0 ){
                 Integer count = 0;
                 do {
@@ -82,7 +81,7 @@ public class CashRegister {
                     changeAmount -= denomination;
 
                 }while(changeAmount / denomination > 0 && count <= denominationCount);
-                if(denomination == 5 && ((Integer) drawer.get(1)).intValue() == 0){
+                if(denomination == 5 && ((Integer) register.get(1)).intValue() == 0){
                     count -= 1;
                     changeAmount += denomination;
                 }
@@ -91,6 +90,7 @@ public class CashRegister {
                 changeDenominations += "0 ";
             }
         }
+
         if (changeAmount != 0){
             return "sorry";
         }
@@ -100,7 +100,7 @@ public class CashRegister {
     }
 
     private Boolean emptyDrawer(){
-         return drawer.entrySet().stream().allMatch(entry -> {
+         return register.entrySet().stream().allMatch(entry -> {
              return entry.getValue() == 0;
          });
     }
