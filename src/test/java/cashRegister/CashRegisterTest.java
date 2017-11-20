@@ -23,8 +23,6 @@ public class CashRegisterTest {
 
     private CashRegister cashRegisterE;
 
-    private CashRegister cashRegisterF;
-
     @Before
 
     public void setUp() {
@@ -49,42 +47,31 @@ public class CashRegisterTest {
         cashRegisterB.addToDrawer(cashToAdd_2);
 
         cashRegisterC = new CashRegister();
-        TreeMap<Integer,Integer> cashToAdd_3 = new TreeMap<Integer, Integer>();
-        cashToAdd_3.put(1, 0);
-        cashToAdd_3.put(2, 3);
-        cashToAdd_3.put(5, 1);
-        cashToAdd_3.put(10, 0);
-        cashToAdd_3.put(20, 0);
-        cashRegisterC.addToDrawer(cashToAdd_2);
-
-        cashRegisterD = new CashRegister();
         TreeMap<Integer,Integer> cashToAdd_4 = new TreeMap<Integer, Integer>();
         cashToAdd_4.put(1, 1);
-        cashToAdd_4.put(2, 2);
+        cashToAdd_4.put(2, 1);
         cashToAdd_4.put(5, 0);
         cashToAdd_4.put(10, 1);
         cashToAdd_4.put(20, 0);
-        cashRegisterD.addToDrawer(cashToAdd_2);
+        cashRegisterC.addToDrawer(cashToAdd_4);
 
-        cashRegisterE = new CashRegister();
+        cashRegisterD = new CashRegister();
         TreeMap<Integer,Integer> cashToAdd_5 = new TreeMap<Integer, Integer>();
         cashToAdd_5.put(1, 3);
         cashToAdd_5.put(2, 0);
         cashToAdd_5.put(5, 2);
         cashToAdd_5.put(10, 0);
         cashToAdd_5.put(20, 0);
-        cashRegisterD.addToDrawer(cashToAdd_2);
+        cashRegisterD.addToDrawer(cashToAdd_5);
 
-        cashRegisterF = new CashRegister();
+        cashRegisterE = new CashRegister();
         TreeMap<Integer,Integer> cashToAdd_6 = new TreeMap<Integer, Integer>();
         cashToAdd_6.put(1, 3);
         cashToAdd_6.put(2, 0);
-        cashToAdd_6.put(5, 2);
-        cashToAdd_6.put(10, 0);
+        cashToAdd_6.put(5, 0);
+        cashToAdd_6.put(10, 1);
         cashToAdd_6.put(20, 0);
-        cashRegisterF.addToDrawer(cashToAdd_2);
-
-
+        cashRegisterE.addToDrawer(cashToAdd_6);
     }
 
     @Test
@@ -126,7 +113,7 @@ public class CashRegisterTest {
     }
 
     @Test(expected = Exception.class)
-    public void testThrowExceptionIfRegisterEmpty() throws EmptyRegisterException {
+    public void testThrowExceptionIfTakingFromRegisterEmpty() throws EmptyRegisterException {
         TreeMap<Integer,Integer> cashToRemove = new TreeMap<Integer, Integer>();
         cashToRemove.put(1, 20);
         cashToRemove.put(2, 2);
@@ -134,6 +121,17 @@ public class CashRegisterTest {
         cashToRemove.put(10, 5);
         cashToRemove.put(20, 3);
         cashRegisterEmpty.removeCashFromRegister(cashToRemove);
+    }
+
+    @Test(expected = Exception.class)
+    public void testThrowExceptionIfRemoveAmountMoreThanInRegister() throws EmptyRegisterException {
+        TreeMap<Integer,Integer> cashToRemove = new TreeMap<Integer, Integer>();
+        cashToRemove.put(1, 20);
+        cashToRemove.put(2, 4);
+        cashToRemove.put(5, 5);
+        cashToRemove.put(10, 2);
+        cashToRemove.put(20, 3);
+        cashRegisterA.removeCashFromRegister(cashToRemove);
     }
 
 
@@ -145,10 +143,19 @@ public class CashRegisterTest {
         cashToAdd.put(5, 3);
         cashToAdd.put(10, 0);
         cashToAdd.put(20, 1);
-        cashRegisterEmpty.addToDrawer(cashToAdd);
-        cashRegisterEmpty.makeChange(11);
+        cashRegisterEmpty.addToDrawer(cashToAdd);;
         Assert.assertEquals("0 0 1 3 0", cashRegisterEmpty.makeChange(11));
-    }
+        Assert.assertEquals("0 0 0 0 13", cashRegisterA.makeChange(13));
+        Assert.assertEquals("0 0 1 4 0", cashRegisterB.makeChange(13));
+        Assert.assertEquals("0 1 0 1 1", cashRegisterC.makeChange(13));
+        Assert.assertEquals("0 0 2 0 3", cashRegisterD.makeChange(13));
+        Assert.assertEquals("0 1 0 0 3", cashRegisterE.makeChange(13));
+        Assert.assertEquals("0 0 0 0 8", cashRegisterA.makeChange(8));
+        Assert.assertEquals("0 0 0 4 0", cashRegisterB.makeChange(8));
+        Assert.assertEquals("sorry", cashRegisterC.makeChange(8));
+        Assert.assertEquals("0 0 1 0 3", cashRegisterD.makeChange(8));;
+        Assert.assertEquals("sorry", cashRegisterE.makeChange(8));
+   }
 
     @Test
     public void testMakeChangeReturnsErrorMessageIfChangeNotPossible(){
@@ -159,13 +166,12 @@ public class CashRegisterTest {
         cashToAdd.put(10, 0);
         cashToAdd.put(20, 1);
         cashRegisterEmpty.addToDrawer(cashToAdd);
-//        Assert.assertEquals("sorry", cashRegisterEmpty.makeChange(11));
+        Assert.assertEquals("sorry", cashRegisterEmpty.makeChange(11));
         Assert.assertEquals("sorry", cashRegisterA.makeChange(14));
-//        Assert.assertEquals("sorry", cashRegisterB.makeChange(14));
-//        Assert.assertEquals("sorry", cashRegisterC.makeChange(14));
-//        Assert.assertEquals("sorry", cashRegisterD.makeChange(14));
-//        Assert.assertEquals("sorry", cashRegisterE.makeChange(14));
-//        Assert.assertEquals("sorry", cashRegisterF.makeChange(14));
+        Assert.assertEquals("sorry", cashRegisterB.makeChange(14));
+        Assert.assertEquals("sorry", cashRegisterC.makeChange(14));
+        Assert.assertEquals("sorry", cashRegisterD.makeChange(14));
+        Assert.assertEquals("sorry", cashRegisterE.makeChange(14));
     }
 
 
