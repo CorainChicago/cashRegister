@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cashRegister.CashRegisterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-11-20T06:44:29" hostname="nicks-mbp-2.lan" time="0.072">
+  <properties/>
+  <testcase name="testMakeChange" classname="cashRegister.CashRegisterTest" time="0.069"/>
+  <testcase name="testThrowExceptionIfRegisterEmpty" classname="cashRegister.CashRegisterTest" time="0.001"/>
+  <testcase name="testCashRegisterReturnsCurrentStateOfEmptyWhenEmpty" classname="cashRegister.CashRegisterTest" time="0.0"/>
+  <testcase name="testCashRegisterCanFillDrawer" classname="cashRegister.CashRegisterTest" time="0.0"/>
+  <testcase name="testCanRemoveCashFromRegister" classname="cashRegister.CashRegisterTest" time="0.0"/>
+  <testcase name="testMakeChangeReturnsErrorMessageIfChangeNotPossible" classname="cashRegister.CashRegisterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

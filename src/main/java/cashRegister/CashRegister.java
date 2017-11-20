@@ -6,12 +6,6 @@ import java.util.*;
 
 public class CashRegister {
 
-    private int purchasePrice;
-
-    private int moneyGiven;
-
-    private int change;
-
     private TreeMap<Integer, Integer> register;
 
     public CashRegister() {
@@ -21,6 +15,10 @@ public class CashRegister {
         register.put(5, 0);
         register.put(2, 0);
         register.put(1, 0);
+    }
+
+    public CashRegister(TreeMap<Integer,Integer> register) {
+        this.register = register;
     }
 
     public String showCurrentState(){
