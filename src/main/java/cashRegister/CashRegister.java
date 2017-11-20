@@ -42,7 +42,6 @@ public class CashRegister {
         for(Map.Entry<Integer,Integer> entry : denominationsAdded.entrySet()) {
             Integer key = entry.getKey();
             Integer  value = entry.getValue();
-
             int balance = ((Integer) register.get(key)).intValue();
             register.put(key, balance + value);
         }
@@ -50,7 +49,7 @@ public class CashRegister {
     }
 
     public void removeCashFromRegister(TreeMap<Integer, Integer> denominationsRemoved) throws EmptyRegisterException {
-        if (emptyDrawer()) {
+        if (emptyRegister()) {
             throw new EmptyRegisterException("The register is empty.");
         }
         for(Map.Entry<Integer,Integer> entry : denominationsRemoved.entrySet()) {
@@ -64,7 +63,7 @@ public class CashRegister {
     }
 
     public String makeChange(Integer changeAmount){
-        if (changeAmount == 0 || emptyDrawer()){
+        if (changeAmount == 0 || emptyRegister()){
             return "sorry";
         };
 
@@ -99,7 +98,7 @@ public class CashRegister {
 
     }
 
-    private Boolean emptyDrawer(){
+    private Boolean emptyRegister(){
          return register.entrySet().stream().allMatch(entry -> {
              return entry.getValue() == 0;
          });
