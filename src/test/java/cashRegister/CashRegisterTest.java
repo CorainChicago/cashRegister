@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.Before;
 
 import java.util.TreeMap;
-
+import java.util.concurrent.ConcurrentHashMap;
 
 
 public class CashRegisterTest {
@@ -90,6 +90,8 @@ public class CashRegisterTest {
         cashToAdd.put(20, 1);
         cashRegisterEmpty.addToDrawer(cashToAdd);
         Assert.assertEquals("$69 1 2 1 2 20", cashRegisterEmpty.showCurrentState());
+        cashRegisterEmpty.addToDrawer(cashToAdd);
+        Assert.assertEquals("$138 2 4 2 4 40", cashRegisterEmpty.showCurrentState());
     }
 
     @Test
@@ -113,7 +115,7 @@ public class CashRegisterTest {
     }
 
     @Test(expected = Exception.class)
-    public void testThrowExceptionIfTakingFromRegisterEmpty() throws EmptyRegisterException {
+    public void testThrowsExceptionIfRemovingFromRegisterEmpty() throws EmptyRegisterException {
         TreeMap<Integer,Integer> cashToRemove = new TreeMap<Integer, Integer>();
         cashToRemove.put(1, 20);
         cashToRemove.put(2, 2);
@@ -124,7 +126,7 @@ public class CashRegisterTest {
     }
 
     @Test(expected = Exception.class)
-    public void testThrowExceptionIfRemoveAmountMoreThanInRegister() throws EmptyRegisterException {
+    public void testThrowsExceptionIfRemoveAmountMoreThanInRegister() throws EmptyRegisterException {
         TreeMap<Integer,Integer> cashToRemove = new TreeMap<Integer, Integer>();
         cashToRemove.put(1, 20);
         cashToRemove.put(2, 4);
@@ -172,6 +174,16 @@ public class CashRegisterTest {
         Assert.assertEquals("sorry", cashRegisterC.makeChange(14));
         Assert.assertEquals("sorry", cashRegisterD.makeChange(14));
         Assert.assertEquals("sorry", cashRegisterE.makeChange(14));
+    }
+
+    @Test
+    public void testMakeChangeVoidsTransactionIfChangeNotPossible(){
+        cashRegisterEmpty.makeChange(15);
+        Assert.assertEquals("$0 0 0 0 0 0", cashRegisterEmpty.showCurrentState());
+        cashRegisterA.makeChange(15);
+        Assert.assertEquals("$13 0 0 0 0 13", cashRegisterA.showCurrentState());
+        cashRegisterB.makeChange(15);
+        Assert.assertEquals("$13 0 0 1 4 0", cashRegisterB.showCurrentState());
     }
 
 

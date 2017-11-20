@@ -1,5 +1,6 @@
 package cashRegister;
 
+import apple.laf.JRSUIUtils;
 import emptyRegisterException.EmptyRegisterException;
 
 import java.util.*;
@@ -45,11 +46,13 @@ public class CashRegister {
     }
 
     public void removeCashFromRegister(TreeMap<Integer, Integer> denominationsRemoved) throws EmptyRegisterException {
+        TreeMap<Integer, Integer> startingRegister = register;
         for (Map.Entry<Integer, Integer> entry : denominationsRemoved.entrySet()) {
             Integer key = entry.getKey();
             Integer value = entry.getValue();
             int balance = ((Integer) register.get(key)).intValue();
             if (emptyRegister() || balance < value) {
+                register = startingRegister;
                 throw new EmptyRegisterException("Cannot make more change. Sorry ");
             }
             register.put(key, balance - value);
@@ -81,6 +84,7 @@ public class CashRegister {
     }
 
     private String calculateChange(TreeMap<Integer, Integer> register, Integer changeAmount) {
+        TreeMap<Integer, Integer> startRegister = register;
         String changeDenominations = new String();
         Iterator drawerKeysReversed = register.descendingKeySet().iterator();
 
@@ -105,6 +109,7 @@ public class CashRegister {
             }
         }
         if (changeAmount != 0) {
+            register = startRegister;
             return "sorry";
         } else {
             return changeDenominations.substring(0, changeDenominations.length() - 1);

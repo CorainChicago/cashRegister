@@ -40,35 +40,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CashRegister.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CashRegister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+            <state relative-caret-position="246">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CashRegisterTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CashRegisterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#651#669#0" expanded="true" />
-                <element signature="e#970#988#0" expanded="true" />
-                <element signature="e#1300#1318#0" expanded="true" />
-                <element signature="e#1630#1648#0" expanded="true" />
-                <element signature="e#1960#1978#0" expanded="true" />
-                <element signature="e#3797#3815#0" expanded="true" />
-                <element signature="e#4251#4269#0" expanded="true" />
-                <element signature="e#5753#5771#0" expanded="true" />
+                <element signature="e#697#715#0" expanded="true" />
+                <element signature="e#1016#1034#0" expanded="true" />
+                <element signature="e#1346#1364#0" expanded="true" />
+                <element signature="e#1676#1694#0" expanded="true" />
+                <element signature="e#2006#2024#0" expanded="true" />
+                <element signature="e#3982#4000#0" expanded="true" />
+                <element signature="e#4437#4455#0" expanded="true" />
+                <element signature="e#5939#5957#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -364,8 +374,9 @@
         <option value="$PROJECT_DIR$/src/test/java/cashRegister/CalculateTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/EmptyRegister.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java" />
       </list>
     </option>
   </component>
@@ -569,7 +580,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister">
+  <component name="RunManager" selected="JUnit.CashRegisterTest">
     <configuration default="false" name="CashRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -584,58 +595,6 @@
       <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cashRegister.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="code_challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cashRegister" />
-      <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
-      <option name="METHOD_NAME" value="tesMakeChangeReturnsErrorMessageIfChangeNotPossible" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cashRegister.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="code_challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cashRegister" />
-      <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
-      <option name="METHOD_NAME" value="testMakeChangeReturnsErrorMessageIfChangeNotPossible" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -687,6 +646,58 @@
       <option name="PACKAGE_NAME" value="cashRegister" />
       <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
       <option name="METHOD_NAME" value="testThrowExceptionIfRemoveAmountMoreThanInRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cashRegister.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="code_challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cashRegister" />
+      <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
+      <option name="METHOD_NAME" value="testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cashRegister.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="code_challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cashRegister" />
+      <option name="MAIN_CLASS_NAME" value="cashRegister.CashRegisterTest" />
+      <option name="METHOD_NAME" value="testMakeChangeVoidsTransactionIfChangeNotPossible" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -961,18 +972,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CashRegisterTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChange" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChange" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChange" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeReturnsErrorMessageIfChangeNotPossible" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.tesMakeChangeReturnsErrorMessageIfChangeNotPossible" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CashRegisterTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CashRegisterTest.testMakeChange" />
       </list>
     </recent_temporary>
   </component>
@@ -990,35 +1001,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 32m 05s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 08h 30m 42s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 37m 30s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 08h 31m 25s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 40m 46s.xml">
+    <history-entry file="CashRegisterTest - 2017.11.20 at 08h 40m 04s.xml">
       <configuration name="CashRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 40m 49s.xml">
-      <configuration name="CashRegisterTest" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeVoidsTransactionIfChangeNotPossible - 2017.11.20 at 08h 31m 59s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 41m 08s.xml">
-      <configuration name="CashRegisterTest" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeVoidsTransactionIfChangeNotPossible - 2017.11.20 at 08h 32m 26s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest - 2017.11.20 at 07h 41m 26s.xml">
-      <configuration name="CashRegisterTest" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeVoidsTransactionIfChangeNotPossible - 2017.11.20 at 08h 33m 17s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegister - 2017.11.20 at 07h 32m 35s.xml">
-      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeVoidsTransactionIfChangeNotPossible - 2017.11.20 at 08h 33m 29s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegister - 2017.11.20 at 07h 37m 21s.xml">
-      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testMakeChangeVoidsTransactionIfChangeNotPossible - 2017.11.20 at 08h 39m 59s.xml">
+      <configuration name="CashRegisterTest.testMakeChangeVoidsTransactionIfChangeNotPossible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegister - 2017.11.20 at 07h 43m 27s.xml">
-      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister - 2017.11.20 at 08h 23m 55s.xml">
+      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegister - 2017.11.20 at 07h 43m 36s.xml">
-      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegister" configurationId="JUnit" />
+    <history-entry file="CashRegisterTest_testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister - 2017.11.20 at 08h 30m 36s.xml">
+      <configuration name="CashRegisterTest.testThrowExceptionIfRemoveAmountMoreThanInRegisterWithNoChangeToRegister" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1032,7 +1043,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="23" width="1400" height="833" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1041,13 +1052,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4493927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27260458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18353577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46153846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22091311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1105,12 +1116,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java</url>
-          <line>47</line>
+          <line>86</line>
           <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="64" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1125,8 +1136,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1370,14 +1381,14 @@
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#651#669#0" expanded="true" />
-            <element signature="e#970#988#0" expanded="true" />
-            <element signature="e#1300#1318#0" expanded="true" />
-            <element signature="e#1630#1648#0" expanded="true" />
-            <element signature="e#1960#1978#0" expanded="true" />
-            <element signature="e#3797#3815#0" expanded="true" />
-            <element signature="e#4251#4269#0" expanded="true" />
-            <element signature="e#5753#5771#0" expanded="true" />
+            <element signature="e#697#715#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1346#1364#0" expanded="true" />
+            <element signature="e#1676#1694#0" expanded="true" />
+            <element signature="e#2006#2024#0" expanded="true" />
+            <element signature="e#3982#4000#0" expanded="true" />
+            <element signature="e#4437#4455#0" expanded="true" />
+            <element signature="e#5939#5957#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1388,8 +1399,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1633,14 +1644,14 @@
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#651#669#0" expanded="true" />
-            <element signature="e#970#988#0" expanded="true" />
-            <element signature="e#1300#1318#0" expanded="true" />
-            <element signature="e#1630#1648#0" expanded="true" />
-            <element signature="e#1960#1978#0" expanded="true" />
-            <element signature="e#3797#3815#0" expanded="true" />
-            <element signature="e#4251#4269#0" expanded="true" />
-            <element signature="e#5753#5771#0" expanded="true" />
+            <element signature="e#697#715#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1346#1364#0" expanded="true" />
+            <element signature="e#1676#1694#0" expanded="true" />
+            <element signature="e#2006#2024#0" expanded="true" />
+            <element signature="e#3982#4000#0" expanded="true" />
+            <element signature="e#4437#4455#0" expanded="true" />
+            <element signature="e#5939#5957#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1922,32 +1933,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#651#669#0" expanded="true" />
-            <element signature="e#970#988#0" expanded="true" />
-            <element signature="e#1300#1318#0" expanded="true" />
-            <element signature="e#1630#1648#0" expanded="true" />
-            <element signature="e#1960#1978#0" expanded="true" />
-            <element signature="e#3797#3815#0" expanded="true" />
-            <element signature="e#4251#4269#0" expanded="true" />
-            <element signature="e#5753#5771#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="319">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cashRegister/CashRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+        <state relative-caret-position="246">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cashRegister/CashRegisterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#697#715#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1346#1364#0" expanded="true" />
+            <element signature="e#1676#1694#0" expanded="true" />
+            <element signature="e#2006#2024#0" expanded="true" />
+            <element signature="e#3982#4000#0" expanded="true" />
+            <element signature="e#4437#4455#0" expanded="true" />
+            <element signature="e#5939#5957#0" expanded="true" />
           </folding>
         </state>
       </provider>
