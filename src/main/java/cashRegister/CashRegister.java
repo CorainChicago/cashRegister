@@ -49,28 +49,24 @@ public class CashRegister {
     }
 
     public void removeCashFromRegister(TreeMap<Integer, Integer> denominationsRemoved){
+        if (emptyDrawer()) {
+            return "The drawer is empty";
+        }
         for(Map.Entry<Integer,Integer> entry : denominationsRemoved.entrySet()) {
             Integer key = entry.getKey();
             Integer value = entry.getValue();
 
             int balance = ((Integer) drawer.get(key)).intValue();
-            if (balance - value < 0) {
-                System.out.print("Hi");
-            }
-            else {
-                drawer.put(key, balance - value);
-            }
+
+            drawer.put(key, balance - value);
+
         }
 
 
     }
 
     public String makeChange(Integer changeAmount){
-        Boolean emptyDrawer = drawer.entrySet().stream().allMatch(entry -> {
-                return entry.getValue() == 0;
-            }
-        );
-        if (changeAmount == 0 || emptyDrawer){
+        if (changeAmount == 0 || emptyDrawer()){
             return "sorry";
         };
 
@@ -96,12 +92,14 @@ public class CashRegister {
                 changeDenominations += "0 ";
             }
         }
-        if(changeAmount != 0){
-            return "sorry";
-        }
-        else {
-            return changeDenominations.substring(0, changeDenominations.length() - 1);
-        }
 
+        return changeDenominations.substring(0, changeDenominations.length() - 1);
+
+    }
+
+    private Boolean emptyDrawer(){
+         return drawer.entrySet().stream().allMatch(entry -> {
+             return entry.getValue() == 0;
+         });
     }
 }
