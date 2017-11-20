@@ -1,13 +1,14 @@
 package cashRegister;
 
 import cashRegister.CashRegister;
+import emptyRegisterException.EmptyRegisterException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.TreeMap;
+
+
 
 public class CashRegisterTest {
 
@@ -38,7 +39,7 @@ public class CashRegisterTest {
     }
 
     @Test
-    public void testCanRemoveCashFromRegister() {
+    public void testCanRemoveCashFromRegister() throws EmptyRegisterException {
         TreeMap<Integer,Integer> cashToAdd = new TreeMap<Integer, Integer>();
         cashToAdd.put(1, 20);
         cashToAdd.put(2, 2);
@@ -54,6 +55,19 @@ public class CashRegisterTest {
         cashToRemove.put(20, 2);
         cashRegister.removeCashFromRegister(cashToRemove);
         Assert.assertEquals("$92 1 4 2 2 18", cashRegister.showCurrentState());
+
+    }
+
+    @Test(expected = Exception.class)
+    public void testThrowExceptionIfRegisterEmpty() throws EmptyRegisterException {
+        TreeMap<Integer,Integer> cashToAdd = new TreeMap<Integer, Integer>();
+        TreeMap<Integer,Integer> cashToRemove = new TreeMap<Integer, Integer>();
+        cashToRemove.put(1, 20);
+        cashToRemove.put(2, 2);
+        cashToRemove.put(5, 3);
+        cashToRemove.put(10, 5);
+        cashToRemove.put(20, 3);
+        cashRegister.removeCashFromRegister(cashToRemove);
     }
 
 

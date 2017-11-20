@@ -1,5 +1,7 @@
 package cashRegister;
 
+import emptyRegisterException.EmptyRegisterException;
+
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -48,9 +50,9 @@ public class CashRegister {
 
     }
 
-    public void removeCashFromRegister(TreeMap<Integer, Integer> denominationsRemoved){
+    public void removeCashFromRegister(TreeMap<Integer, Integer> denominationsRemoved) throws EmptyRegisterException {
         if (emptyDrawer()) {
-            return "The drawer is empty";
+            throw new EmptyRegisterException("The register is empty.");
         }
         for(Map.Entry<Integer,Integer> entry : denominationsRemoved.entrySet()) {
             Integer key = entry.getKey();
@@ -59,10 +61,7 @@ public class CashRegister {
             int balance = ((Integer) drawer.get(key)).intValue();
 
             drawer.put(key, balance - value);
-
         }
-
-
     }
 
     public String makeChange(Integer changeAmount){
@@ -91,6 +90,9 @@ public class CashRegister {
             } else {
                 changeDenominations += "0 ";
             }
+        }
+        if (changeAmount != 0){
+            return "sorry";
         }
 
         return changeDenominations.substring(0, changeDenominations.length() - 1);
