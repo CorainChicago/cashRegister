@@ -1,10 +1,12 @@
 # cashRegister
 
-This cash register only accept $20, $10, $5, $2 and $1 bills. The class has these methods:
+This cash register only accept $20, $10, $5, $2 and $1 bills.
 
     When currency is added to the register or removed, the input needs to be in a TreeMap of the denominations
     takes in a TreeMap of the denominations and add the amount to the register in descending order.
     (#$20 #$10 #$5 #$2 #$1)
+
+The class has these methods:
 
 *showCurrentState
 
@@ -19,7 +21,7 @@ This cash register only accept $20, $10, $5, $2 and $1 bills. The class has thes
     Takes in a TreeMap of the denominations and removes the amount from the register
     Throws an error if the transaction cannot be completed in full but does not reset the register
 
-* makeChange
+*makeChange
 
     Takes in an Integer of the total change needed and returns the amount in the available denominations
     Return "Sorry" if the change available cannot fulfill the change requested and voids the transaction
