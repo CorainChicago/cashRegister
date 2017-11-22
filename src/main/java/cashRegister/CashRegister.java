@@ -64,7 +64,11 @@ public class CashRegister {
             return "sorry";
         }
 
-        return calculateChange(register, changeAmount);
+        TreeMap<Integer, Integer> registerCopy = new TreeMap<>();
+        registerCopy.putAll(register);
+
+        return calculateChange(registerCopy, changeAmount);
+
     }
 
     private Boolean emptyRegister() {
@@ -87,6 +91,7 @@ public class CashRegister {
         TreeMap<Integer, Integer> startRegister = register;
         String changeDenominations = new String();
         Iterator drawerKeysReversed = register.descendingKeySet().iterator();
+        Integer changeAmountStorage = changeAmount;
 
         while (drawerKeysReversed.hasNext()) {
             Integer denomination = Integer.parseInt(drawerKeysReversed.next().toString());
@@ -96,18 +101,27 @@ public class CashRegister {
                 do {
                     count += 1;
                     changeAmount -= denomination;
-
-                } while (changeAmount / denomination > 0 && count <= denominationCount);
-
-                if (changeAmount != 0 && denomination == 5 && ((Integer) register.get(1)).intValue() == 0 && changeAmount < 2 * (Integer) register.get(2).intValue() ) {
-                    count -= 1;
-                    changeAmount += denomination;
-                }
+                } while (count < denominationCount && changeAmount - denomination >= 0);
                 changeDenominations += count + " ";
             } else {
                 changeDenominations += "0 ";
             }
         }
+
+        if (changeAmount != 0) {
+            TreeMap<Integer, Integer> registerCopy = new TreeMap<>();
+            registerCopy.putAll(register);
+            Iterator registerKeysReversed = register.descendingKeySet().iterator();
+            while (registerKeysReversed.hasNext()) {
+                Integer denomination = Integer.parseInt(registerKeysReversed.next().toString());
+                Integer denominationCount = ((Integer) register.get(denomination)).intValue();
+                if (denominationCount> 0) {
+                    registerCopy.put(denomination, denominationCount - 1);
+                    return calculateChange(registerCopy, changeAmountStorage);
+                }
+            }
+        }
+
         if (changeAmount != 0) {
             register = startRegister;
             return "sorry";
@@ -116,4 +130,41 @@ public class CashRegister {
         }
 
     }
+
+
+//    private String calculateChange(TreeMap<Integer, Integer> register, Integer changeAmount) {
+//        TreeMap<Integer, Integer> startRegister = register;
+//        String changeDenominations = new String();
+//        Iterator drawerKeysReversed = register.descendingKeySet().iterator();
+//
+//        while (drawerKeysReversed.hasNext()) {
+//            Integer denomination = Integer.parseInt(drawerKeysReversed.next().toString());
+//            Integer denominationCount = ((Integer) register.get(denomination)).intValue();
+//            if (changeAmount / denomination > 0 && denominationCount > 0) {
+//                Integer count = 0;
+//                do {
+//                    count += 1;
+//                    changeAmount -= denomination;
+//
+//                } while (changeAmount / denomination > 0 && count <= denominationCount);
+//
+//                if (changeAmount != 0 && denomination >= 5 && ((Integer) register.get(1)).intValue() == 0 && changeAmount < 2 * (Integer) register.get(2).intValue() ) {
+//                    count -= 1;
+//                    changeAmount += denomination;
+//                }
+//                changeDenominations += count + " ";
+//            } else {
+//                changeDenominations += "0 ";
+//            }
+//        }
+//        if (changeAmount != 0) {
+//            register = startRegister;
+//            return "sorry";
+//        } else {
+//            return changeDenominations.substring(0, changeDenominations.length() - 1);
+//        }
+//
+//    }
+
+
 }

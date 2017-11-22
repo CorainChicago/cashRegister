@@ -186,6 +186,32 @@ public class CashRegisterTest {
         Assert.assertEquals("$13 0 0 1 4 0", cashRegisterB.showCurrentState());
     }
 
+    @Test
+    public void testMakeChange13(){
+        TreeMap<Integer,Integer> cashToAdd = new TreeMap<Integer, Integer>();
+        cashToAdd.put(1, 0);
+        cashToAdd.put(2, 4);
+        cashToAdd.put(5, 1);
+        cashToAdd.put(10, 1); // test will pass if the $10 is removed
+        cashToAdd.put(20, 0);
+        cashRegisterEmpty.addToDrawer(cashToAdd);;
+        Assert.assertEquals("0 0 1 4 0", cashRegisterEmpty.makeChange(13));
+    }
+
+    @Test
+    public void testMakeChange23(){
+        TreeMap<Integer,Integer> cashToAdd = new TreeMap<Integer, Integer>();
+        cashToAdd.put(1, 0);
+        cashToAdd.put(2, 4);
+        cashToAdd.put(5, 3);
+        cashToAdd.put(10, 0);
+        cashToAdd.put(20, 1); // test will pass if $20 is removed
+        cashRegisterEmpty.addToDrawer(cashToAdd);
+        Assert.assertEquals("0 0 3 4 0", cashRegisterEmpty.makeChange(23));
+    }
+
+
+
 
 
 
